@@ -1,9 +1,9 @@
-export const GREETINGS_RETRIVIED = "hello-react-front-end/src/redux/greeting/GREETINGS_RETRIEVED"
+export const GREETINGS_RETRIEVED = "hello-react-front-end/src/redux/greeting/GREETINGS_RETRIEVED"
 
 const greetingsReducer = (state = "", action) => {
-    {type, payload} = action
+    const {type, payload} = action
     switch(type){
-        case `${GREETINGS_RETRIVIED}/fulfilled`:
+        case `${GREETINGS_RETRIEVED}/fulfilled`:
             return{...state, message: payload}
         default:
             return state
