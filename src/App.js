@@ -1,10 +1,13 @@
 import './App.css';
 import React from 'react';
 import Greeting from './components/Greeting';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <Greeting />
+    <Routes>
+      <Route path="/" element={<Greeting />}/>
+    </Routes>
   );
 }
 

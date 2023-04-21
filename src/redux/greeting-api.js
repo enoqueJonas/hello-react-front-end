@@ -1,10 +1,12 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { GREETINGS_RETRIEVED } from "./greeting";
+import axios from "axios";
 
 const getGreetings = createAsyncThunk(GREETINGS_RETRIEVED, async () => {
-    const res = await fetch("/greetongs/random", {}).then((response) => response.json());
-    console.log(res.message)
-    return res.message;
-})
+    const res = await axios.get("http://localhost:3000/greetings/random")
+        .catch(err => console.error(err));
+    return res.data.message;
+});
+
 
 export default getGreetings;
