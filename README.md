@@ -72,7 +72,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 cd my-folder
-git clone https://github.com/enoqueJonas/inoance/
+git clone https://github.com/enoqueJonas/hello-react-front-end/
 cd blog-app-ror
 
 ### Install
