@@ -11,7 +11,7 @@ const Greeting = () => {
   }, []);
 
   return (
-        <h1>{greetingState.message}</h1>
+    <h1>{greetingState.message}</h1>
   );
 };
 
